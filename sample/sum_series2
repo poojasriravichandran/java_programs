@@ -1,0 +1,27 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+import java.math.*;
+class Ideone
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner in =new Scanner(System.in);
+		int x=in.nextInt();
+		int n=in.nextInt();
+		
+		double y,sum=0;
+		for(int i=1;i<n;i++)
+		{
+			int n1=1;
+			for(int j=1;j<=i;j++)
+				n1*=j;
+			
+			y= Math.pow(x,i);
+			sum+=(y/n1);
+			
+		}
+		sum+=(Math.pow(x,n))/n;
+		System.out.println(sum);
+	}
+}
